@@ -1,0 +1,7 @@
+<resources>
+    <style name="CustomTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+</resources>
