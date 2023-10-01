@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +19,14 @@ public class MainActivity extends AppCompatActivity {
         ImageView coatOfArmsImageView = findViewById(R.id.coatOfArmsImageView);
 
         surnameTextView.setText(getString(R.string.surname));
-        flagImageView.setImageResource(R.drawable.national_flag);
-        coatOfArmsImageView.setImageResource(R.drawable.national_coat_of_arms);
+
+        if(Locale.getDefault().getLanguage().equals("en")){
+            flagImageView.setImageResource(R.drawable.flag_of_the_us);
+            coatOfArmsImageView.setImageResource(R.drawable.coat_of_arms_of_the_us);
+        }else {
+            flagImageView.setImageResource(R.drawable.national_flag);
+            coatOfArmsImageView.setImageResource(R.drawable.national_coat_of_arms);
+        }
+
     }
 }

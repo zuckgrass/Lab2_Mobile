@@ -9,20 +9,37 @@
     <TextView
         android:id="@+id/surnameTextView"
         style="@style/CustomTextStyle"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="200px"
         android:text="@string/surname" />
 
     <ImageView
-        android:id="@+id/flagImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/national_flag" />
+        android:id="@+id/customshape"
+        android:layout_width="121dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center"
+        android:src="@drawable/custom_shape" />
 
-    <ImageView
-        android:id="@+id/coatOfArmsImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/national_coat_of_arms" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/coatOfArmsImageView"
+            android:layout_width="152dp"
+            android:layout_height="258dp"
+            android:src="@drawable/national_coat_of_arms" />
+
+        <ImageView
+            android:id="@+id/flagImageView"
+            android:layout_width="229dp"
+            android:layout_height="242dp"
+            android:src="@drawable/national_flag" />
+
+    </LinearLayout>
 
 </LinearLayout>
